@@ -3,8 +3,7 @@
   width: 556;
   height: 368;
   border-style: solid;
-  border-width: 12px;
-  border-radius: 3;
+  border-width: 10px;
   color:rgb(222, 174, 50);
   }
 
@@ -13,6 +12,7 @@
     height: 368; 
     text-align: center;
     color: black;
+    box-shadow: 0 0 0 5px rgb(222, 174, 50); border-radius: 9px;
   }
 
 #th {height: 46; font-size: 19; font-weight: normal}
