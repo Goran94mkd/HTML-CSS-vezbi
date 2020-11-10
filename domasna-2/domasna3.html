@@ -1,0 +1,87 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <p style="color: grey;">Please fill your information</p>
+    <form>
+      <fieldset style="background-color: rgb(211,211,211); border: 0; width: 600px;">
+        <label for="name"><b>Your Full Name</b></label>
+        <br>
+        <input type="text" name="name" id="name" style="width: 341px">
+        <br>
+        <label for="day"><p style="color: cornflowerblue;">Date of Birth</p></label>
+        <input type="number" min="1" max="31" step="1" placeholder="Day" name="day" id="day">
+        <label for="month"></label>
+        <input type="number" min="1" max="12" step="1" placeholder="Month" name="month" id="month">
+        <label for="year"></label>
+        <input type="number" min="1991" max="2021" step="1" placeholder="Year" name="year" id="year" style="width: 200px">
+      </fieldset>
+      <br>
+      
+      <fieldset style="background-color: rgb(211,211,211); border: 0; width: 600px">
+        <input type="radio" id="tax" name="id">
+        <label for="tax">Tax ID</label>
+        <input type="radio" id="social" name="id">
+        <label for="social">Social Security Number</label>
+        <input type="text" name="digit" id="digit" placeholder="9 Digit Number" style="width: 200px">
+        <label for="digit"></label>
+      </fieldset>
+      <br>
+
+      <fieldset style="background-color: rgb(211,211,211); border: 0; width: 600px">
+        <label for="citizenship"><b>Citizenship</b></label>
+        <select name="citizenship" id="citizenship" style="width: 200px">
+          <option selected value="US">US Citizen</option>
+          <option value="Macedonian">Macedonian Citizen</option>
+          <option value="Russian">Russian Citizen</option>
+          <option value="Serbian">Serbian Citizen</option>
+          <option value="Spanish">Spanish Citizen</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="country"><b>Country</b></label>
+        <select name="country" id="country" style="width: 200px">
+          <option selected value="">United States</option>
+          <option value="">Macedonia</option>
+          <option value="">Russia</option>
+          <option value="">Serbia</option>
+          <option value="">Spain</option>
+        </select>
+        <br><br><br>
+        <label for="d phone"><b>Day Phone</b></label>
+        <input type="text" name="d phone" id="d phone" placeholder="(xxx) xxx-xxxx" style="width: 200px">
+        <label for="e phone"><b>Evening Phone</b></label>
+        <input type="text" name="e phone" id="e phone" placeholder="(xxx) xxx-xxxx" style="width: 198px">
+        <br><br>
+        <label for="line 1"><b>Adress Line 1</b></label>
+        <input type="text" placeholder="(xxx) xxx-xxxx" name="line 1" id="line 1" style="width: 180px">
+        &nbsp; <label for="line 2"><b>Adress Line 2</b></label>
+        <input type="text" placeholder="(xxx) xxx-xxxx" name="line 2" id="line 2" style="width: 198px">
+        <br><br>
+        <label for="city"><b>City</b></label>
+        <input type="text" name="city" placeholder="(xxx) xxx-xxxx" id="city" style="width: 244px">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <label for="state"><b>State</b></label>
+        <select name="state" id="state"style="width: 65px">
+          <option value="">California</option>
+          <option value="">Arizona</option>
+          <option value="">Florida</option>
+        </select>
+        <label for="zip"><b>Zip Code</b></label>
+        <input type="tel" name="zip" id="zip" style="width: 65px">
+      </fieldset>
+      <br>
+      <fieldset style="background-color: rgb(211,211,211); border: 0; width: 600px">
+        <input type="radio" name="subject" id="subject">
+        <label for="subject" style="color: grey;">Subject to backup withholding</label>
+        <input type="radio" name="subject" id="reinvest">
+        <label for="reinvest">I want to reinvest my dividends</label>
+      </fieldset>
+      <br>
+
+      <fieldset style="background-color: rgb(211,211,211); border: 0; width: 600px">
+        <input type="radio" name="add" id="add">
+        <label for="add" style="color: grey;">+Add optional mailing address</label>
+      </fieldset>
+    </form>
+  </body>
+</html>
