@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="positioning.css">
+
+    <title>Positioning</title>
+  </head>
+  <body>
+    <header>
+      <h1>The different values of <code>position</code></h1>
+      <p>Visual samples of the effect of the different <code>position</code> values when used with offset values (<code>left</code>, <code>right</code>, <code>top</code> and <code>bottom</code>). In addition, a look at their corresponding <a href="https://drafts.csswg.org/css-position/#logical-box-offsets-beaso">logical offset values</a> (still work in progress and may not be stable).</p>
+      <p>Follow along the <a href="https://drafts.csswg.org/css-position/">CSS Positioned Layout Module Level 3</a> Editor's Draft for more information and updates, keeping in mind this edition is constantly changing at this point. Current browser implementations in Chrome and Firefox use the <code>inset-block-*</code> and <code>inset-inline-*</code> syntax, which reflects the editor's draft version of the specification as of 23 April 2020.</p>
+    </header>
+    <main>
+
+      <section>
+        <div class="static">
+          <h2><code>position: static</code></h2>
+          <p>The default value of <code>position</code> for all boxes.</p>
+          <div class="container">
+            <div class="box"></div>
+            <div class="box positioned"><span>static</span></div>
+            <div class="box"></div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <h2><code>position: relative</code></h2>
+          <p>The positioned (green) box has offset values of <code>top: 2em</code> and <code>left: 2em</code>, and thus is offset by <code>2em</code> from the top and left of its normal position.</p>
+          <div class="container">
+            <div class="box"></div>
+            <div class="box positioned"><span>relative</span></div>
+            <div class="box"></div>
+          </div>
+        </div>
+    
+        <div class="absolute">
+          <h2><code>position: absolute</code></h2>
+          <p>The positioned (green) box is absolutely positioned with an offset value of <code>right: 0</code> alone. This pushes the box to the right edge of the container but keeps its vertical position.</p>
+          <div class="container">
+            <div class="box"></div>
+            <div class="box positioned"><span>absolute</span></div>
+            <div class="box"></div>
+          </div>
+        </div>
+    
+        <div class="fixed">
+          <h2><code>position: fixed</code></h2>
+          <p>The positioned (green) box does its own thing because its containing block will always be the viewport. With offset values of <code>right: 0</code> and <code>top: 0</code> it will always be in the top right corner of the whole page.</p>
+          <div class="container">
+            <div class="box"></div>
+            <div class="box positioned"><span>fixed</span></div>
+            <div class="box"></div>
+          </div>
+        </div>
+      </section>
+    
+      <section>
+        <div class="sticky top">
+          <h2><code>position: sticky</code> (top)</h2> 
+          <p>The positioned (green) box behaves like a relatively positioned box until its containing block has scrolled the normal flow <strong>top</strong> position “out-of-frame”.</p>
+          <p>The box will then maintain a top position relative to the visible area as content below it scrolls into view.</p>
+          <div class="container">
+            <div class="box"></div>
+            <div class="box positioned"><span>sticky (top)</span></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
+    
+        <div class="sticky bottom">
+          <h2><code>position: sticky</code> (bottom)</h2>
+          <p>The positioned (green) box behaves like a relatively positioned box until its containing block has scrolled the normal flow <strong>bottom</strong> position “out-of-frame”.</p>
+          <p>The box will then maintain a bottom position relative to the visible area as content above it scrolls into view.</p>
+          <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box positioned"><span>sticky (bottom)</span></div>
+            <div class="box"></div>
+          </div>
+        </div>
+    
+        <div class="sticky left">
+          <h2><code>position: sticky</code> (left)</h2>
+          <p>The positioned (green) box behaves like a relatively positioned box until its containing block has scrolled the normal flow <strong>left</strong> position “out-of-frame”.</p>
+          <p>The box will then maintain a left position relative to the visible area as content to its right scrolls into view.</p>
+          <div class="container">
+            <div class="scroll-wrap">
+              <div class="box"></div>
+              <div class="box positioned"><span>sticky (left)</span></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="sticky right">
+          <h2><code>position: sticky</code> (right)</h2>
+          <p>The positioned (green) box behaves like a relatively positioned box until its containing block has scrolled the normal flow <strong>right</strong> position “out-of-frame”.</p>
+          <p>The box will then maintain a right position relative to the visible area as content to its left scrolls into view.</p>
+          <div class="container">
+            <div class="scroll-wrap">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box positioned"><span>sticky (right)</span></div>
+              <div class="box"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="logical-offsets">
+        <div class="horizontal-tb">
+          <h2><code>writing-mode: horizontal-rb</code></h2>
+          <p>The logical top of a container uses <code>inset-block-start</code>, while the logical bottom of a container uses <code>inset-block-end</code>. The logical left of a container uses <code>inset-inline-start</code>, while the logical right of a container uses <code>inset-inline-end</code>.</p>
+          <p>The property values in each of the coloured spans reflect what was written in the <a href="https://drafts.csswg.org/css-position/">CSS Positioned Layout Module Level 3</a> as of 23 April 2020.</p>
+          <div>
+            <div class="logical ltr">
+              <span class="ib">inset-block-start</span>
+              <span class="ia">inset-block-end</span>
+            </div>
+            <div class="logical ltr">
+              <span class="is">inset-inline-start</span>
+              <span class="ie">inset-inline-end</span>
+            </div>
+            <div class="logical rtl">
+              <span class="ib">inset-block-start</span>
+              <span class="ia">inset-block-end</span>
+            </div>
+            <div class="logical rtl">
+              <span class="is">inset-inline-start</span>
+              <span class="ie">inset-inline-end</span>
+            </div>
+          </div>
+        </div>
+    
+        <div class="vertical-rl">
+          <h2><code>writing-mode: vertical-rl</code></h2>
+          <p>The logical top of a container uses <code>inset-block-start</code>, while the logical bottom of a container uses <code>inset-block-end</code>. The logical left of a container uses <code>inset-inline-start</code>, while the logical right of a container uses <code>inset-inline-end</code>.</p>
+          <p>The property values in each of the coloured spans reflect what was written in the <a href="https://drafts.csswg.org/css-position/">CSS Positioned Layout Module Level 3</a> as of 23 April 2020.</p>
+          <div>
+            <div class="logical ltr">
+              <span class="ib">inset-block-start</span>
+              <span class="ia">inset-block-end</span>
+            </div>
+            <div class="logical ltr">
+              <span class="is">inset-inline-start</span>
+              <span class="ie">inset-inline-end</span>
+            </div>
+            <div class="logical rtl">
+              <span class="ib">inset-block-start</span>
+              <span class="ia">inset-block-end</span>
+            </div>
+            <div class="logical rtl">
+              <span class="is">inset-inline-start</span>
+              <span class="ie">inset-inline-end</span>
+            </div>
+          </div>
+        </div>
+    
+        <div class="vertical-lr">
+          <h2><code>writing-mode: vertical-lr</code></h2>
+          <p>The logical top of a container uses <code>inset-block-start</code>, while the logical bottom of a container uses <code>inset-block-end</code>. The logical left of a container uses <code>inset-inline-start</code>, while the logical right of a container uses <code>inset-inline-end</code>.</p>
+          <p>The property values in each of the coloured spans reflect what was written in the <a href="https://drafts.csswg.org/css-position/">CSS Positioned Layout Module Level 3</a> as of 23 April 2020.</p>
+          <div>
+            <div class="logical ltr">
+              <span class="ib">inset-block-start</span>
+              <span class="ia">inset-block-end</span>
+            </div>
+            <div class="logical ltr">
+              <span class="is">inset-inline-start</span>
+              <span class="ie">inset-inline-end</span>
+            </div>
+            <div class="logical rtl">
+              <span class="ib">inset-block-start</span>
+              <span class="ia">inset-block-end</span>
+            </div>
+            <div class="logical rtl">
+              <span class="is">inset-inline-start</span>
+              <span class="ie">inset-inline-end</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  /*flex-wrap: wrap-reverse;*/
+  /*flex-wrap: nowrap;*/
+  flex-wrap: wrap;
+  /*flex-direction: column;*/
+  /*flex-direction: column-reverse;*/
+  /*flex-direction: inherit;*/
+  /*flex-direction: initial;*/
+  /*flex-direction: unset;*/
+  /*align-items: flex-start;*/
+  /*align-items: flex-end;*/
+  /*align-items: baseline;*/
+  /*align-items: center;*/
+}
+
+.box1 {
+  /*flex: 1; - Dodadeni novi flex vrednosti, spored baranjeto */
+  border: 2px solid blue;
+  height: 150px;
+  padding-top: 2%;
+  width: 400px;
+  order: 2;
+  /*flex: 3; - Zakomentirani flex vrednosti spored baranjeto */ 
+  /*flex-grow: 5;*/
+}
+
+.box2 {
+  /*flex: 1; Zakomentirani flex vrednosti spored baranjeto */
+  border: 2px solid blue;
+  height: 150px;
+  padding-top: 2%;
+  width: 400px;
+  order: 1;
+  /*flex-grow: 3;*/
+  /*flex-shrink: 5;*/
+}
+
+.box3 {
+  /*flex: 1; Zakomentirani flex vrednosti spored baranjeto */
+  border: 2px solid blue;
+  height: 150px;
+  padding-top: 2%;
+  width: 400px;
+  order: 3;
+  /*flex-shrink: 2;*/
+}
