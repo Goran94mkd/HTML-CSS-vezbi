@@ -1,0 +1,72 @@
+<html>
+  <head></head>
+  <body>
+    <h1>Software Order Form</h1>
+    
+    <fieldset style="width: 700;">
+      <legend style="text-align: left;">License Details</legend>
+      <ul type="disc">
+        <li>
+          <label for="email">Email address</label>
+          <input type="text" id="email" name="email">
+        </li>
+        <li>
+          <label for="website">Website</label>
+          <input type="url" placeholder="http://www.example.com/" id="website" name="website">
+        </li>
+        <li>
+        <label for="Number of Licenses">Number of Licenses</label>
+        <input type="number" placeholder="How many to buy (1-10)" id="number"  name="Number of Licenses">
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset style="width: 700;">
+      <legend style="text-align: left;">Billing details</legend>
+      <ul type="disc">
+        <li>
+          <label for="name">Name</label>
+          <input type="text" placeholder="First Last" id="name" name="name">
+        </li>
+        <li>
+          <label for="address">Address</label>
+          <textarea name="address" id="address" cols="18" rows="3" style="color: grey;">House number, street, city, state</textarea>
+        </li>
+        <li>
+          <label for="Postal Code">Postal Code</label>
+          <input type="tel" placeholder="Post code or zip ode" name="Postal Code" id="Postal Code">
+        </li>
+        <li>
+          <label for="Country">Country</label>
+          <select name="Country" id="Country">
+            <option>Australia</option>
+            <option>USA</option>
+            <option>Macedonia</option>
+          </select>
+        </li>
+        <li>
+          <label for="phone">Phone <i>(optional)</i></label>
+          <input type="tel" placeholder="Include country prefix, e.g." name="phone" id="phone">
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset style="width: 700;">
+      <legend style="text-align: left;">Payment details</legend>
+      <ul type="disc">
+        <li>
+          <label for="card">Card number</label>
+          <input type="tel" style="width: 170;" name="card" id="card" placeholder="As shown on the front of your card">
+        </li>
+        <li>
+          <label for="CVV">CVV code</label>
+          <input type="tel" style="width: 165;" name="CVV" id="CVV" placeholder="3-digit number on back of your card">
+        </li>
+        <li>
+          <label for="Expiry date">Expiry date</label>
+          <input type="tel" style="width: 165;" name="Expiry date" id="Expiry date" placeholder="YYYY-MM">
+        </li>
+      </ul>
+    </fieldset>
+    <button type="submit" name="Place your order">Place your order</button>
+  </body>
+</html>
