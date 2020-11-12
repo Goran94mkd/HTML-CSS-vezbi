@@ -24,10 +24,25 @@
   color: white;
 }
 
-#a {order: 3; flex-basis: 80px;}
-#b {order: 4; flex-basis: 50px;}
-#c {order: 1; flex-basis: 200px;}
-#d {order: 2; flex-basis: 250px;}
+#a {
+  order: 3;
+  flex-basis: 80px;
+}
+
+#b {
+  order: 4;
+  flex-basis: 50px;
+}
+
+#c {
+  order: 1;
+  flex-basis: 200px;
+}
+
+#d {
+  order: 2; 
+  flex-basis: 250px;
+}
 
 h {
   font-size: 32px;
