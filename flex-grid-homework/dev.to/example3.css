@@ -33,6 +33,6 @@ html, body {
 }
 
 .subitem {
-outline: 3px solid #999;
-background: #ccc;
+  outline: 3px solid #999;
+  background: #ccc;
 }
