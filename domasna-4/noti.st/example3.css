@@ -1,0 +1,29 @@
+body {
+  padding: 2em;
+  background-color: rgb(192, 181, 129);
+  color: #fff;
+}
+
+.grid {
+  border: 5px solid #fff;
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(4, minmax(100px, auto));
+}
+
+.item {
+  grid-column: 2 / 7;
+  grid-row: 2 / 4;
+  background-color: rgba(255,255,255,.6);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 80px);
+}
+
+
+.subitem {
+  background-color: rgb(209,54,114);
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
