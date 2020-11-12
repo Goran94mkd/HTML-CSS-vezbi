@@ -1,0 +1,38 @@
+* {box-sizing: 
+  border-box;
+}
+
+body {
+  padding: 2em;
+  background-color: rgb(192,181,129);
+  color: #333;
+  font: 1rem 'Life Savers', cursive;
+}
+
+.grid {
+  border: 5px solid #fff;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2em auto;
+  padding: 0;
+  gap: 5px;
+}
+
+.grid > * {
+  background-color: rgba(255,255,255,.5);
+  padding: 1em;
+  font-weight: bold;
+}
+
+ul > * {
+  background-color: rgb(209,54,114);
+  padding: 1em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: contents;
+}
