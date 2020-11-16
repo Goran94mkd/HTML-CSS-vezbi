@@ -36,6 +36,7 @@ figure, figcaption {
   transform: rotate(.3deg);
 }
 
+
 figure {
   display: grid;
   height: 100%;
