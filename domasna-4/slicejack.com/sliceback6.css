@@ -23,18 +23,17 @@
 #b {
   /*flex-grow: 1;
   flex-shrink: 5; */ 
-  align-self: 
-  center;
+  align-self: center;
 }
 
 #c {
-  /*flex-grow: 3;*/ 
+  /*flex-grow: 3;*/
   flex-basis: 650px; 
   align-self: flex-start;
 }
 
 #d {
-  /*flex-grow: 1;*/ 
+  /*flex-grow: 1;*/
   align-self: flex-end;
 }
 
