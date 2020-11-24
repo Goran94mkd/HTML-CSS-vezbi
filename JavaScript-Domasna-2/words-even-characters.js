@@ -15,7 +15,7 @@ function arrFunction(arr) {
 console.log(arrFunction(secondString));
 
 const evenStrings = arrFunction(secondString);
-const obj = Object();
+const obj = new Object();
 
 for (let i = 0; i < evenStrings.length; i++) {
 	if(obj[evenStrings[i]] != null) {
