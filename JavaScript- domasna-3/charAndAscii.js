@@ -8,8 +8,8 @@ const charAndAscii = function (combination) {
 
     if (combination.match(char)) {
         let array = [];
-        for (let i = 0; i < input.length; i++) {
-          const charPush = input.charCodeAt(i);
+        for (let i = 0; i < combination.length; i++) {
+          const charPush = combination.charCodeAt(i);
           array.push(charPush);
         }
     } else if (combination.match(numbers)) {
@@ -50,8 +50,8 @@ const charAndAsci2 = function (combination) {
 
   if (combination.match(char)) {
       let array = [];
-      for (let i = 0; i < input.length; i++) {
-        const charPush = input.charCodeAt(i);
+      for (let i = 0; i < combination.length; i++) {
+        const charPush = combination.charCodeAt(i);
         array.push(charPush);
       }
   } else if (combination.match(numbers)) {
