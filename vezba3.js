@@ -1,14 +1,7 @@
 // Regular
 
 const string3 = "j97va11599ri112116";
-const numbers = string3.split('').filter(number => number > 0).join(' ').replaceAll(' ', '')
-const letters = string3.split('').filter(char => /[a-z]/.test(char)).join().replaceAll(',', '')
-// console.log(letters) 
-// console.log(numbers) 
 
-const asciiToChar = function (func) {
-  const ascii = [];
-  const arr = [];
   const a = charToAscii(letters).substr(0,3); // 106
   const c = charToAscii(letters).substr(3,5); // 11897
   const f = charToAscii(letters).substr(8,11); // 114105
