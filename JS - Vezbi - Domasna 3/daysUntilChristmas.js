@@ -1,13 +1,12 @@
-nextChristmas = () => { 
-
-today=new Date(); // days until 07 January 2021
-  let christmas=new Date(today.getFullYear(), 12, 07);
-  if (today.getMonth()==12 && today.getDate()>01) 
-  {
-    christmas.setFullYear(christmas.getFullYear()+1); 
-  }  
-  let secondsInDay=1000*60*60*24;
-console.log(Math.ceil((christmas.getTime()-today.getTime())/(secondsInDay))+" days left until Christmas!"); 
-}
-nextChristmas();
-
+const daysUntilChristmas = () => {
+  let date1 = new Date('01/07/2021');
+  let date2 = new Date();
+  
+  let difference = date1.getTime() - date2.getTime();
+  
+  let days = Math.ceil(difference / (1000 * 3600 * 24));
+  return days
+  }
+  
+  console.log(daysUntilChristmas() + ' days until Christmas')
+  
