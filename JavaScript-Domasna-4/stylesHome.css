@@ -1,0 +1,56 @@
+.body {
+  background-color: rgb(145, 206, 212);
+  margin-top: 50px;
+  margin-left: 250px;
+}
+
+
+.table {
+  border-spacing: 0px;
+  border: 1px solid rgb(42, 105, 118);
+  width: 700px;
+}
+
+#table2 {
+  margin-top: 10px;
+}
+
+#th1{
+  height: 50px;
+  font-size: 25px;
+  padding-top: 50px;
+}
+
+#btn{
+  width: 120%;
+  margin-left: 65px;
+  font-size: 18px;
+  background-color: #ff0000; 
+  height: 25px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+#image {
+  width: 80%
+}
+
+.theadtr {
+  text-align: center;
+  color: rgb(42, 105, 118);
+  background-color: rgb(218, 239, 241);
+}
+
+.tbodytr {
+  text-align: center;
+  background-color: white;
+  color: rgb(42, 105, 118);
+  font-weight: bold;
+}
+
+#tbodytr1 {
+  text-align: center;
+  color: rgb(42, 105, 118);
+}
